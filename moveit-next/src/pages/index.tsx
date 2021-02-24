@@ -16,16 +16,16 @@ export default function Home() {
 
       <ExperienceBar />
 
-    <section>
-      <div>
-        <Profile />
-        <CompletedChallenges />
-        <Countdown />
-      </div>
-      <div>
+      <section>
+        <div>
+          <Profile />
+          <CompletedChallenges />
+          <Countdown />
+        </div>
+        <div>
 
-      </div>
-    </section>
-  </div>
+        </div>
+      </section>
+    </div>
   )
 }

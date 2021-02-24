@@ -17,7 +17,7 @@ export function Countdown() {
     }
 
     useEffect(() => {
-        if(active && time > 0 ) {
+        if (active && time > 0) {
             setTimeout(() => {
                 setTime(time - 1);
             }, 1000)
@@ -26,25 +26,25 @@ export function Countdown() {
 
     return (
         <div>
-        <div className={styles.countdownContainer}>
-            <div>
-                <span>{minuteLeft}</span>
-                <span>{minuteRight}</span>
-            </div>
+            <div className={styles.countdownContainer}>
+                <div>
+                    <span>{minuteLeft}</span>
+                    <span>{minuteRight}</span>
+                </div>
                 <span>:</span>
-            <div>
-                <span>{secondLeft}</span>
-                <span>{secondRight}</span>
-            </div>
-            
-        </div>
+                <div>
+                    <span>{secondLeft}</span>
+                    <span>{secondRight}</span>
+                </div>
 
-        <button 
-        type="button" 
-        className={styles.countdownButton}
-        onClick={startCountdown}
-        >
-        Iniciar um ciclo
+            </div>
+
+            <button
+                type="button"
+                className={styles.countdownButton}
+                onClick={startCountdown}
+            >
+                Iniciar um ciclo
         </button>
         </div>
     );
